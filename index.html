@@ -1,0 +1,403 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>JavaSip</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <header>
+
+        <span id="logospan">
+            <img id="logo" src="images/logo.png">
+        </span>
+
+        <div id="headerdiv">
+                
+            <nav id="links">
+            
+                <span class="moviebutton">
+                    <button id="moviebtn">Movies ▾</button>
+                    <div id="moviedropdown">
+                        <button id="nsbtn">Now Showing</button>
+                        <button id="csbtn">Coming Soon</button>
+                    </div>
+                </span>
+
+                <button id="mbtn">MENU</button>
+                <button id="gcb">GIFT CARDS</button>
+            </nav>
+
+            <span id="otherlinks">
+                <span class="locationbutton">
+
+                    <span id="locationbtn" style="display: flex">
+                        <svg style="width: 20px; margin-bottom: 2px; margin-right: 5px; cursor: pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M128 252.6C128 148.4 214 64 320 64C426 64 512 148.4 512 252.6C512 371.9 391.8 514.9 341.6 569.4C329.8 582.2 310.1 582.2 298.3 569.4C248.1 514.9 127.9 371.9 127.9 252.6zM320 320C355.3 320 384 291.3 384 256C384 220.7 355.3 192 320 192C284.7 192 256 220.7 256 256C256 291.3 284.7 320 320 320z"/></svg>
+                        <p style="cursor: pointer">Find a store</p>
+                    </span>
+
+                    <div id="locationdropdown">
+                        <button id="india">India</button>
+                        <button id="usa">USA</button>
+                    </div>
+                </span>
+                <span>
+                    <button id="signin">Sign In</button>
+                </span>
+
+                <span>
+                    <button id="searchicon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"/></svg>
+                    </button>
+                </span>
+            </span>
+
+        </div>
+    </header>
+
+    <div id="signinmodalcontainer">
+        <div id="signinmodal">
+
+            <div id="signinmodalheader">
+                <h2 style="margin-left: 20px">JAVASIP</h2>
+                <button id="signinmodalclosebtn">
+                    X
+                </button>
+            </div>
+
+            <div id="signinformoptionbuttonsdiv">
+
+                <div id="signinformoptionbuttons">
+                    <button id="sibutton">SIGN IN</button><button id="joinbutton">JOIN</button>
+                </div>
+
+            </div>
+
+            <div id="forms">
+
+                <form id="signinform"> 
+
+                <label for="email" class="e-p-label">EMAIL</label>
+                <input type="email" id="email" placeholder="Email" class="typeinput1">
+                <br>
+                <br>
+                <label for="password" class="e-p-label">PASSWORD</label>
+                <input type="password" id="passsword" placeholder="Password" class="typeinput1">
+
+                <p class="termsreminder" style="padding-right: 32px; padding-left: 32px; margin-top: 25px; margin-bottom: 25px">By clicking "Sign In" I agree to the Terms and Conditions & Privacy Policy. I also consent to the collection and use of my Personal Information as described in the Notice regarding Loyalty Programs.</p>
+
+                <button type="submit" id="sisubmitbtn" disabled>SIGN IN</button>
+                
+                <br>
+                <br>
+
+                <div style="text-align: left; padding-left: 32px; display: flex">
+                    <input type="checkbox" style="cursor: pointer; width: 18px; height: 18px">
+                    <p class="rememberme">Remember me</p>
+                    <svg style="width: 22px; margin-bottom: 13px; margin-left: 3px; cursor: pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM288 224C288 206.3 302.3 192 320 192C337.7 192 352 206.3 352 224C352 241.7 337.7 256 320 256C302.3 256 288 241.7 288 224zM280 288L328 288C341.3 288 352 298.7 352 312L352 400L360 400C373.3 400 384 410.7 384 424C384 437.3 373.3 448 360 448L280 448C266.7 448 256 437.3 256 424C256 410.7 266.7 400 280 400L304 400L304 336L280 336C266.7 336 256 325.3 256 312C256 298.7 266.7 288 280 288z"/></svg>
+                </div>
+
+                </form>
+
+
+                <form id="joinform"> 
+    
+                    <div style="display: flex; justify-content: space-between; padding-left: 32px; padding-right: 32px; padding-top: 5px; padding-bottom: 15px; box-sizing: border-box"> 
+
+                        <span>
+                            <label for="firstname" class="fn-ln-label">FIRST NAME</label>
+                            <input type="text" id="firstname" placeholder="First Name" class="nametypeinput">
+                        </span>
+
+                        <span>
+                            <label for="lastname" class="fn-ln-label">LAST NAME</label>
+                            <input type="text" id="lastnae=me" placeholder="Last Name" class="nametypeinput" style="width: 194.4px">
+                        </span>
+                    
+                    </div>
+
+                    <label for="email" class="e-p-label">EMAIL</label>
+                    <input type="text" id="email" placeholder="Email" class="typeinput2" style="margin-bottom: 20px">
+                    <br>
+                    <label for="password" class="e-p-label">PASSWORD</label>
+                    <input type="text" id="passsword" placeholder="Password" class="typeinput2">
+    
+                    <p class="termsreminder" style="padding-right: 32px; padding-left: 32px; margin-top: 25px; margin-bottom: 25px">By clicking "Join" I agree to the Terms and Conditions & Privacy Policy. I also consent to the collection and use of my Personal Information as described in the Notice regarding Loyalty Programs.</p>
+    
+                    <button type="submit" id="joinsubmitbtn" disabled>JOIN</button>
+                    
+                    <br>
+                    <br>
+
+                    <div style="text-align: left; padding-left: 32px; display: flex">
+                        <input type="checkbox" style="cursor: pointer; width: 18px; height: 18px">
+                        <p class="rememberme">Remember me</p>
+                        <svg style="width: 22px; margin-bottom: 13px; margin-left: 3px; cursor: pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM288 224C288 206.3 302.3 192 320 192C337.7 192 352 206.3 352 224C352 241.7 337.7 256 320 256C302.3 256 288 241.7 288 224zM280 288L328 288C341.3 288 352 298.7 352 312L352 400L360 400C373.3 400 384 410.7 384 424C384 437.3 373.3 448 360 448L280 448C266.7 448 256 437.3 256 424C256 410.7 266.7 400 280 400L304 400L304 336L280 336C266.7 336 256 325.3 256 312C256 298.7 266.7 288 280 288z"/></svg>
+                    </div>
+
+                </form>
+
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="searchmodalcontainer">
+        <div id="searchmodal">
+
+            <div id="searchinputdiv">
+                <svg style="width: 28px; margin-right: 10px; margin-bottom: 3px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"/></svg>
+                <input type="text" placeholder="Search" id="searchinput">
+            </div>
+
+        </div>
+    </div>
+
+    <div id="gc">
+        <h1>GIFT CARDS</h1>
+    </div>
+
+    <div id="slideshow">
+        <img src="images/slideshow.png" id="ss">
+    </div>
+
+    <div id="menuheader">
+        <button style="margin-left: 131px" id="meb">Menu</button>
+        <button id="feb">Featured</button>
+        <button id="prb">Previous</button>
+        <button id="sab">Saved</button>
+    </div>
+
+    <div id="menudiv">
+
+    <div id="menulistcontainer">
+        <div id="menulist">
+            <h3>Fan Favourites</h3>
+            <button class="productbtn" id="trendingbtn">Trending</button>
+            <button class="productbtn" id="smtbtn">Smt</button>
+
+            <h3>Drinks</h3>
+            <button class="productbtn" id="hotcoffeebtn">Hot Coffee</button>
+            <button class="productbtn" id="coldcoffeebtn">Cold Coffee</button>
+            <button class="productbtn" id="matchabtn">Matcha</button>
+            <button class="productbtn" id="hotteabtn">Hot Tea</button>
+            <button class="productbtn" id="iceteabtn">Ice Tea</button>
+            <button class="productbtn" id="waterbtn">Bottled Water</button>
+
+            <h3>Food</h3>
+            <button class="productbtn" id="sandwichbtn">Sandwich</button>
+            <button class="productbtn" id="wrapbtn">Wrap</button>
+            <button class="productbtn" id="croissantbtn">Croissant</button>
+            <button class="productbtn" id="muffinbtn">Muffin</button>
+        </div>
+    </div>
+
+    <div id="menucontainer">
+        <div id="menu">
+            <h1 style="margin-bottom: 48px">Menu</h1>
+
+            <h2 style="margin-bottom: 0px; padding-bottom: 16px">Fan Favorites</h2>
+            <div style="height: 32.8px; width: 100%; background-color: white; border-top: 1px solid #d2d2d2;"></div>
+            
+            <div style="display: flex; align-items: top; height: 184px">
+                <div class="productdiv" id="trendingdiv">
+                    <img class="productimg" src="images/.png">
+                    <p class="productname">Trending</p>
+
+                    <div class="productmodal" id="trendingmodal">
+
+                        <id class="prbx">
+                            <p class="price" data-price="6343.89" style="color: black">₹1000</p>
+                        </id>
+
+                        <button class="atc">
+                            ADD TO CART
+                        </button>
+                    </div>
+                
+                </div>
+                <div class="productdiv" id="smtdiv">
+                    <img class="productimg" src="images/coldcoffee.png">
+                    <p class="productname">Smt</p>
+                    <div class="productmodal" id="smtmodal">
+                        <id class="prbx">
+                            <p class="price" data-price="6343.89" style="color: black">₹1000</p>
+                        </id>
+
+                        <button class="atc">
+                            ADD TO CART
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <h2 style="margin-bottom: 0px; padding-bottom: 16px">Drinks</h2>
+            <div style="height: 32.8px; width: 100%; background-color: white; border-top: 1px solid #d2d2d2;"></div>
+            
+            <div style="display: flex">
+                <div class="productdiv" id="hotcoffeediv">
+                    <img class="productimg" src="images/hotcoffee.png">
+                    <p class="productname">Hot Coffee</p>
+                    <div class="productmodal" id="hotcoffeemodal">
+
+                    </div>
+                </div>
+                <div class="productdiv" id="coldcoffeediv">
+                    <img class="productimg" src="images/coldcoffee.png">
+                    <p class="productname">Cold Coffee</p>
+                    <div class="productmodal" id="coldcoffeemodal">
+
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex">
+                <div class="productdiv" id="matchadiv">
+                    <img class="productimg" src="images/matcha.png">
+                    <p class="productname">Matcha</p>
+                    <div class="productmodal" id="matchamodal">
+
+                    </div>
+                </div>
+                <div class="productdiv" id="hotteadiv">
+                    <img class="productimg" src="images/hottea.png">
+                    <p class="productname">Hot Tea</p>
+                    <div class="productmodal" id="hotteamodal">
+
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; align-items: top; height: 184px">
+                <div class="productdiv" id="iceteadiv">
+                    <img class="productimg" src="images/icetea.png">
+                    <p class="productname">Ice Tea</p>
+                    <div class="productmodal" id="iceteamodal">
+
+                    </div>
+                </div>
+                <div class="productdiv" id="waterdiv">
+                    <img class="productimg" src="images/water.png">
+                    <p class="productname">Bottled Water</p>
+                    <div class="productmodal" id="watermodal">
+
+                    </div>
+                </div>
+            </div>
+
+            <h2 style="margin-bottom: 0px; padding-bottom: 16px">Food</h2>
+            <div style="height: 32.8px; width: 100%; background-color: white; border-top: 1px solid #d2d2d2;"></div>
+            
+            <div style="display: flex">
+                <div class="productdiv" id="sandwichdiv">
+                    <img class="productimg" src="images/sandwich.png">
+                    <p class="productname">Breakfast Sandwich</p>
+                    <div class="productmodal" id="sandwichmodal">
+
+                    </div>
+                </div>
+                <div class="productdiv" id="wrapdiv">
+                    <img class="productimg" src="images/wrap.png">
+                    <p class="productname">Brekfast Wrap</p>
+                    <div class="productmodal" id="wrapmodal">
+
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; align-items: top; height: 184px">
+                <div class="productdiv" id="croissantdiv">
+                    <img class="productimg" src="images/croissant.png">
+                    <p class="productname">Croissant</p>
+                    <div class="productmodal" id="croissantmodal">
+
+                    </div>
+                </div>
+
+                <div class="productdiv" id="muffindiv">
+                    <img class="productimg" src="images/muffin.png">
+                    <p class="productname">Muffin</p>
+                    <div class="productmodal" id="muffinmodal">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+    <div id="featdiv">
+
+    <div id="featlistcontainer">
+        <div id="featlist">
+            <h3>Fan Favourites</h3>
+        </div>
+    </div>
+
+    <div id="featcontainer">
+        <div id="feat">
+            <h1 style="margin-bottom: 48px">Featured</h1>
+
+            <h2 style="margin-bottom: 0px; padding-bottom: 16px">Fan Favorites</h2>
+            <div style="height: 32.8px; width: 100%; background-color: white; border-top: 1px solid #d2d2d2;"></div>
+
+        </div>
+    </div>
+
+    </div>
+
+    <div id="prevdiv">
+
+    <div id="prevlistcontainer">
+        <div id="prevlist">
+            <h3>Fan Favourites</h3>
+        </div>
+    </div>
+
+    <div id="prevcontainer">
+        <div id="prev">
+            <h1 style="margin-bottom: 48px">Previous</h1>
+
+            <h2 style="margin-bottom: 0px; padding-bottom: 16px">Fan Favorites</h2>
+            <div style="height: 32.8px; width: 100%; background-color: white; border-top: 1px solid #d2d2d2;"></div>
+
+        </div>
+    </div>
+
+    </div>
+
+    <div id="savdiv">
+
+    <div id="savlistcontainer">
+        <div id="savlist">
+            <h3>Fan Favourites</h3>
+        </div>
+    </div>
+
+    <div id="savcontainer">
+        <div id="sav">
+            <h1 style="margin-bottom: 48px">Saved</h1>
+
+            <h2 style="margin-bottom: 0px; padding-bottom: 16px">Fan Favorites</h2>
+            <div style="height: 32.8px; width: 100%; background-color: white; border-top: 1px solid #d2d2d2;"></div>
+
+        </div>
+    </div>
+
+    </div>
+
+    <div id="cartfooter">
+        <h1 style="height: 30px;">GO TO CART</h1>
+    </div>
+
+    <div id="cart">
+        <button id="cartcl">X</button>
+    </div>
+
+    <p class="price" data-price="6343.89" style="color: black">₹6343.89</p>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
